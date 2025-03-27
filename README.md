@@ -55,6 +55,69 @@ During this step we will be using an agent (workspace) to write the project docu
 
 Finally, verify the new endpoint is working by trying it out by going to the `/docs` endpoint and confirming that the endpoint shows up.
 
+## 🚀 Como executar este projeto
+
+Siga os passos abaixo para configurar e executar o projeto localmente:
+
+### Pré-requisitos
+
+Certifique-se de ter os seguintes itens instalados em sua máquina:
+- Python 3.10 ou superior
+- `pip` para gerenciar pacotes Python
+- `virtualenv` para criar ambientes virtuais (opcional, mas recomendado)
+
+### Passo 1: Clonar o repositório
+
+Clone este repositório para sua máquina local:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+```
+
+### Passo 2: Criar e ativar um ambiente virtual (opcional, mas recomendado)
+
+Crie um ambiente virtual para isolar as dependências do projeto:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
+```
+
+### Passo 3: Instalar as dependências
+
+Instale as dependências listadas no arquivo `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Passo 4: Executar o servidor
+
+Inicie o servidor FastAPI usando o Uvicorn:
+
+```bash
+uvicorn main:app --reload
+```
+
+O servidor será iniciado em `http://127.0.0.1:8000`.
+
+### Passo 5: Testar a API
+
+Abra seu navegador e acesse a documentação interativa da API em:
+
+- Swagger UI: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+- Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
+
+### Passo 6: Executar os testes
+
+Para garantir que tudo está funcionando corretamente, execute os testes com o `pytest`:
+
+```bash
+pytest
+```
+
+Agora você está pronto para explorar e contribuir com o projeto! 🎉
 
 🚀 Congratulations, through the exercise, you haven't only used copilot to generate code but also done it in an interactive and fun way! You can use GitHub Copilot to not only generate code, but write documentation, test your applications and more.
 
